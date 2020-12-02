@@ -1,0 +1,143 @@
+.bux-wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999999;
+}
+
+.bux-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bux-headerHeading {
+  font-size: 16px;
+}
+
+.bux-headerLink {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.bux-headerLink:visited {
+  color: #fff;
+}
+
+.bux-cards {
+  box-sizing: border-box;
+  max-height: calc(100vh - 82px);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: -10px;
+  margin-top: 30px;
+  margin-right: -10px;
+  overflow-y: auto;
+}
+
+.bux-card {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.bux-cardNotFoundHeading {
+  font-size: 30px;
+}
+
+.bux-cardNotFoundText {
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.bux-cardNotFoundLink {
+  color: #FF7D00;
+}
+
+.bux-cardButton {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 55%;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.bux-cardButton:hover,
+.bux-cardButton:focus {
+  border: none;
+  outline: none;
+}
+
+.bux-cardButton:before {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+
+.bux-cardButton:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 144px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bux-cardButton:hover:before {
+  content: '';
+  border-color: #555;
+}
+
+.bux-cardButtonSelected:before,
+.bux-cardButtonSelected:hover:before {
+  content: '';
+  border-color: #FF7D00;
+}
+
+.bux-cardButtonSelected:after {
+  content: 'Click again to remove applied styles';
+}
+
+.bux-cardText {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.bux-clearStyles {
+  display: none;
+  width: 100%;
+  height: 40px;
+  appearance: none;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
