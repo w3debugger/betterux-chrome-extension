@@ -66,7 +66,7 @@ chrome.runtime.onMessage.addListener(async ({ data, enrichHostname }) => {
     buxCard.classList.add('bux-card')
     buxCard.innerHTML = `
       <div class="bux-cardNotFoundHeading">No UX found :(</div>
-      <div class="bux-cardNotFoundText">Please <a class="bux-cardNotFoundLink" href="https://github.com/BetterUX/web" target="_blank">visit</a> to contribute</div>
+      <div class="bux-cardNotFoundText">Please <a class="bux-cardNotFoundLink" href="https://github.com/w3debugger/betterux-web" target="_blank">visit</a> to contribute</div>
     `;
 
     dom.querySelector('.bux-cards').append(buxCard);
